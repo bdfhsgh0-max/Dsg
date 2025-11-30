@@ -1,0 +1,78 @@
+# Copyright (c) 2025 devgagan : https://github.com/devgaganin.
+# Licensed under the GNU General Public License v3.0.
+# See LICENSE file in the repository root for full license text.
+
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+# ════════════════════════════════════════════════════════════════════════════════
+# ░ CONFIGURATION SETTINGS
+# ════════════════════════════════════════════════════════════════════════════════
+
+# VPS --- FILL COOKIES 🍪 in """ ... """ 
+INST_COOKIES = """
+# write up here insta cookies
+"""
+
+YTUB_COOKIES = """
+# write here yt cookies
+"""
+
+# ─── BOT / DATABASE CONFIG ──────────────────────────────────────────────────────
+API_ID       = os.getenv("API_ID", "21834860")
+API_HASH     = os.getenv("API_HASH", "e4acef545ba34ee3fa5c511b38644647")
+BOT_TOKEN    = os.getenv("BOT_TOKEN", "8535687492:AAEpySxT-Eb4gLc4mqDPgfeO0EMoCgP3X7s")
+MONGO_DB     = os.getenv("MONGO_DB", "mongodb+srv://divyanshshukla5375_db_user:1kZ2dsVTktdMljpr@cluster0.lo5qk5v.mongodb.net/?appName=Cluster0")
+DB_NAME      = os.getenv("DB_NAME", "divyanshshukla5375_db_user")
+
+# ─── OWNER / CONTROL SETTINGS ───────────────────────────────────────────────────
+OWNER_ID     = list(map(int, os.getenv("OWNER_ID", "8056097370").split()))  # space-separated list
+STRING       = os.getenv("STRING", None)  # optional session string
+LOG_GROUP    = int(os.getenv("LOG_GROUP", "-1003236631193"))
+FORCE_SUB    = int(os.getenv("FORCE_SUB", "-1003236631193"))
+
+# ─── SECURITY KEYS ──────────────────────────────────────────────────────────────
+MASTER_KEY   = os.getenv("MASTER_KEY", "08a4e707174b9565fd3a1be985db6d37")  # session encryption
+IV_KEY       = os.getenv("IV_KEY", "3c769d02e123")  # decryption key
+
+# ─── COOKIES HANDLING ───────────────────────────────────────────────────────────
+YT_COOKIES   = os.getenv("YT_COOKIES", YTUB_COOKIES)
+INSTA_COOKIES = os.getenv("INSTA_COOKIES", INST_COOKIES)
+
+# ─── USAGE LIMITS ───────────────────────────────────────────────────────────────
+FREEMIUM_LIMIT = int(os.getenv("FREEMIUM_LIMIT", "10"))
+PREMIUM_LIMIT  = int(os.getenv("PREMIUM_LIMIT", "50000000000"))
+
+# ─── UI / LINKS ─────────────────────────────────────────────────────────────────
+JOIN_LINK     = os.getenv("JOIN_LINK", "https://t.me/team_spy_pro")
+ADMIN_CONTACT = os.getenv("ADMIN_CONTACT", "https://t.me/username_of_admin")
+
+# ════════════════════════════════════════════════════════════════════════════════
+# ░ PREMIUM PLANS CONFIGURATION
+# ════════════════════════════════════════════════════════════════════════════════
+
+P0 = {
+    "d": {
+        "s": int(os.getenv("PLAN_D_S", 1)),
+        "du": int(os.getenv("PLAN_D_DU", 1)),
+        "u": os.getenv("PLAN_D_U", "days"),
+        "l": os.getenv("PLAN_D_L", "Daily"),
+    },
+    "w": {
+        "s": int(os.getenv("PLAN_W_S", 3)),
+        "du": int(os.getenv("PLAN_W_DU", 1)),
+        "u": os.getenv("PLAN_W_U", "weeks"),
+        "l": os.getenv("PLAN_W_L", "Weekly"),
+    },
+    "m": {
+        "s": int(os.getenv("PLAN_M_S", 5)),
+        "du": int(os.getenv("PLAN_M_DU", 1)),
+        "u": os.getenv("PLAN_M_U", "month"),
+        "l": os.getenv("PLAN_M_L", "Monthly"),
+    },
+}
+
+# ════════════════════════════════════════════════════════════════════════════════
+# ░ DEVGAGAN
+# ════════════════════════════════════════════════════════════════════════════════
