@@ -31,11 +31,6 @@ OWNER_ID     = list(map(int, os.getenv("OWNER_ID", "8056097370").split()))  # sp
 STRING       = os.getenv("STRING", None)  # optional session string
 LOG_GROUP    = int(os.getenv("LOG_GROUP", "-1003236631193"))
 FORCE_SUB    = int(os.getenv("FORCE_SUB", "-1003236631193"))
-
-# ─── SECURITY KEYS ──────────────────────────────────────────────────────────────
-MASTER_KEY   = os.getenv("MASTER_KEY", "08a4e707174b9565fd3a1be985db6d37")  # session encryption
-IV_KEY       = os.getenv("IV_KEY", "3c769d02e123")  # decryption key
-
 # ─── COOKIES HANDLING ───────────────────────────────────────────────────────────
 YT_COOKIES   = os.getenv("YT_COOKIES", YTUB_COOKIES)
 INSTA_COOKIES = os.getenv("INSTA_COOKIES", INST_COOKIES)
@@ -74,6 +69,7 @@ P0 = {
 }
 
 # ════════════════════════════════════════════════════════════════════════════════
-# ░ DEVGAGAN
+# ░ GAMER DS
 # ════════════════════════════════════════════════════════════════════════════════
+
 
